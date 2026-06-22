@@ -1,8 +1,8 @@
-# Invest - AI 投资研究助手 (CodeBuddy Code Skill)
+# Invest - 通用 AI 投资研究助手
 
 > 一句话完成趋势扫描、产业链拆解、个股基本面/技术面分析、综合研报输出。聚焦 **A股** 和 **港股** 市场。
 
-[![CodeBuddy Code Skill](https://img.shields.io/badge/CodeBuddy_Code-Skill-blue)](https://cnb.cool/codebuddy/codebuddy-code)
+[![AI Agent Ready](https://img.shields.io/badge/AI_Agent-Ready-blue)](#)
 [![Market](https://img.shields.io/badge/Market-A%E8%82%A1%20%7C%20%E6%B8%AF%E8%82%A1-red)](#)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
@@ -33,28 +33,42 @@
 
 ### 前提条件
 
-- 已安装 [CodeBuddy Code](https://cnb.cool/codebuddy/codebuddy-code) CLI 工具
 - Python 3.8+（脚本首次运行自动创建 venv 并安装依赖）
+- Codex、Claude、CodeBuddy Code 或其他可读取仓库 Markdown 指令的 AI 编码助手
 
 ### 安装
 
 ```bash
-# 克隆到 CodeBuddy Code 的 skills 目录
-git clone https://github.com/harrischen/invest.git ~/.codebuddy/skills/invest
+git clone https://github.com/harrischen/invest.git
+cd invest
 ```
 
 ### 使用
 
-在 CodeBuddy Code 中直接输入：
+在 AI 助手中使用时，让助手先读取对应入口文件：
+
+- Codex：读取 `AGENTS.md`
+- Claude：读取 `CLAUDE.md`
+- 其他 AI 助手：读取 `SKILL.md`
+
+然后直接提出投资研究需求：
 
 ```
-/invest 有什么方向
+有什么方向
 
-/invest 分析一下比亚迪
+分析一下比亚迪
 
-/invest 拆解人形机器人产业链
+拆解人形机器人产业链
 
-/invest 出一份腾讯的研报
+出一份腾讯的研报
+```
+
+结构化数据也可以直接通过脚本获取：
+
+```bash
+python3 scripts/run.py a 600519 all
+python3 scripts/run.py hk 00700 technical
+python3 scripts/run.py us NVDA finance
 ```
 
 ---
@@ -137,7 +151,9 @@ python3 scripts/run.py <market> <code> <data_type>
 
 ```
 invest/
-├── SKILL.md                    # Skill 主文件（CodeBuddy Code 加载入口）
+├── AGENTS.md                   # Codex 入口说明
+├── CLAUDE.md                   # Claude 入口说明
+├── SKILL.md                    # 通用投资研究助手主说明
 ├── README.md                   # 本文件
 ├── scripts/
 │   ├── run.py                  # 统一入口（自动管理 venv）

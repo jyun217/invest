@@ -26,17 +26,17 @@ Step 2: WebSearch 拆解各环节
   → "[行业] 毛利率 净利率 各环节对比"
 
 Step 3: 脚本获取各环节龙头财务数据
-  → python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a <公司1> finance
-  → python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a <公司2> finance
-  → python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a <公司3> finance
+  → python3 scripts/run.py a <公司1> finance
+  → python3 scripts/run.py a <公司2> finance
+  → python3 scripts/run.py a <公司3> finance
   → 横向对比：谁营收增速最快？谁利润率最高？谁在加速？
 
 Step 4: 脚本获取估值对比
-  → python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a <公司> valuation
+  → python3 scripts/run.py a <公司> valuation
   → 哪个环节估值洼地？哪个已透支？
 
 Step 5: 脚本获取板块整体走势
-  → python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a <板块ETF> technical
+  → python3 scripts/run.py a <板块ETF> technical
   → 板块处于什么趋势阶段？是否已被充分定价？
 
 Step 6: WebSearch 催化剂验证

@@ -8,16 +8,16 @@
 
 ```bash
 # A股
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a <代码> finance
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a <代码> valuation
+python3 scripts/run.py a <代码> finance
+python3 scripts/run.py a <代码> valuation
 
 # 港股
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py hk <代码> finance
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py hk <代码> valuation
+python3 scripts/run.py hk <代码> finance
+python3 scripts/run.py hk <代码> valuation
 
 # 美股
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py us <ticker> finance
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py us <ticker> valuation
+python3 scripts/run.py us <ticker> finance
+python3 scripts/run.py us <ticker> valuation
 ```
 
 ### Step 2: WebSearch 补充定性信息
