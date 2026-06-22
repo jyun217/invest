@@ -62,9 +62,9 @@ invest/
 ### 4.1 统一接口规范
 
 ```bash
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/fetch_a_stock.py <股票代码> <数据类型>
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/fetch_hk_stock.py <股票代码> <数据类型>
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/fetch_us_stock.py <股票代码> <数据类型>
+python3 scripts/fetch_a_stock.py <股票代码> <数据类型>
+python3 scripts/fetch_hk_stock.py <股票代码> <数据类型>
+python3 scripts/fetch_us_stock.py <股票代码> <数据类型>
 ```
 
 **数据类型参数**：`quote` | `finance` | `technical` | `fund_flow` | `valuation` | `all`

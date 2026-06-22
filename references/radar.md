@@ -17,16 +17,16 @@ Step 1: 政策面扫描（WebSearch）
 Step 2: 海外映射扫描（WebSearch + 脚本）
   → "NVIDIA earnings data center revenue 2025"
   → "Microsoft Google Meta capex AI 2025"
-  → python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py us NVDA quote
-  → python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py us MSFT quote
+  → python3 scripts/run.py us NVDA quote
+  → python3 scripts/run.py us MSFT quote
 
 Step 3: 技术拐点扫描（WebSearch）
   → "[领域] 技术突破 量产 2025"
   → "[领域] 新标准 发布 升级"
 
 Step 4: 资金动向扫描（脚本 + WebSearch）
-  → python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a <板块ETF> technical
-  → python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a <板块ETF> fund_flow
+  → python3 scripts/run.py a <板块ETF> technical
+  → python3 scripts/run.py a <板块ETF> fund_flow
   → "北向资金 加仓 板块 2025"
   → "[板块] 主力资金 净流入"
 
@@ -184,9 +184,9 @@ Step 7: 交叉验证 + 排序
 **数据获取**：
 ```bash
 # 各板块 ETF 的资金流向
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a 159995 fund_flow   # 半导体
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a 515070 fund_flow   # AI
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a 516160 fund_flow   # 新能源
+python3 scripts/run.py a 159995 fund_flow   # 半导体
+python3 scripts/run.py a 515070 fund_flow   # AI
+python3 scripts/run.py a 516160 fund_flow   # 新能源
 ```
 
 **搜索补充**：
@@ -226,14 +226,14 @@ python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a 516160 fund_flow   # 新能源
 **批量扫描脚本**：
 ```bash
 # 对所有关注板块 ETF 获取技术面数据
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a 159995 technical  # 半导体
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a 515070 technical  # AI
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a 516160 technical  # 新能源
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a 159857 technical  # 光伏
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a 512660 technical  # 军工
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a 512010 technical  # 医药
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a 159928 technical  # 消费
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a 515880 technical  # 通信
+python3 scripts/run.py a 159995 technical  # 半导体
+python3 scripts/run.py a 515070 technical  # AI
+python3 scripts/run.py a 516160 technical  # 新能源
+python3 scripts/run.py a 159857 technical  # 光伏
+python3 scripts/run.py a 512660 technical  # 军工
+python3 scripts/run.py a 512010 technical  # 医药
+python3 scripts/run.py a 159928 technical  # 消费
+python3 scripts/run.py a 515880 technical  # 通信
 ```
 
 **输出轮动图**：

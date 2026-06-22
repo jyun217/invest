@@ -17,7 +17,7 @@
 ### 统一入口
 
 ```bash
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py <market> <code> <data_type>
+python3 scripts/run.py <market> <code> <data_type>
 ```
 
 ### 参数说明
@@ -50,9 +50,9 @@ python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py <market> <code> <data_type>
 ### 调用示例
 
 ```bash
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a 600519 all
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py hk 00700 technical
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py us NVDA quote
+python3 scripts/run.py a 600519 all
+python3 scripts/run.py hk 00700 technical
+python3 scripts/run.py us NVDA quote
 ```
 
 ### 输出格式

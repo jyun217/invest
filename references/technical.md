@@ -8,15 +8,15 @@
 
 ```bash
 # A股
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a <代码> technical
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a <代码> fund_flow
+python3 scripts/run.py a <代码> technical
+python3 scripts/run.py a <代码> fund_flow
 
 # 港股
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py hk <代码> technical
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py hk <代码> fund_flow
+python3 scripts/run.py hk <代码> technical
+python3 scripts/run.py hk <代码> fund_flow
 
 # 美股
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py us <ticker> technical
+python3 scripts/run.py us <ticker> technical
 ```
 
 脚本返回 JSON，包含均线、MACD、RSI、KDJ、布林带、ATR、成交量等全部指标。
@@ -128,7 +128,7 @@ python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py us <ticker> technical
 **获取方式**：
 ```bash
 # 获取行业 ETF 的动量数据做对比
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py a <行业ETF代码> technical
+python3 scripts/run.py a <行业ETF代码> technical
 # 比较 momentum_20d 差值
 ```
 

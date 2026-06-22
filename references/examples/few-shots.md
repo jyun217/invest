@@ -10,8 +10,8 @@
 
 **数据获取**：
 ```bash
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py hk 00700 technical
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py hk 00700 fund_flow
+python3 scripts/run.py hk 00700 technical
+python3 scripts/run.py hk 00700 fund_flow
 ```
 
 **输出**：
@@ -148,7 +148,7 @@ python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py hk 00700 fund_flow
 
 **获取**：
 ```bash
-python3 ${CODEBUDDY_SKILL_DIR}/scripts/run.py us NVDA finance
+python3 scripts/run.py us NVDA finance
 ```
 
 **输出引用**：
